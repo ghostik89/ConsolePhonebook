@@ -11,7 +11,10 @@ using std::string;
 class Person
 {
 public:
-	Person(string first = "", string second = "");
+	Person(string first = "", string second = "") {
+		firstname = first;
+		secondname = second;
+	}
 	~Person();
 	//оператор меньше
 	bool operator<(const Person& p)const {
@@ -29,11 +32,6 @@ private:
 	string firstname;
 };
 
-Person::Person(string first = "",string second = "")
-{
-	firstname = first;
-	secondname = second;
-}
 
 Person::~Person()
 {
