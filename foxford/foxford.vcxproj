@@ -114,7 +114,10 @@
     <ClCompile Include="homework.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="iterator_for_cin.cpp" />
+    <ClCompile Include="iterator_for_cin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="iterator_for_cout.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Personh.h" />
